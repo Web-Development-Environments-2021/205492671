@@ -5,7 +5,7 @@
 </head>
 <body>
 <div id="menu">
-<img src="logo.png" height="35" width="35">
+<img src="pictures/logo.png" height="35" width="35">
 <a href="#about">About Me</a>
 <a href="#photos">My Photos</a>
 <a href="#playlist">My Playlist</a>
@@ -21,10 +21,10 @@
   <br/>
   <br/>
   <br/>
-<p>
-  קצת על עצמי
-  שמי דינה
-</p>
+    <p>
+      קצת על עצמי
+      שמי דינה
+    </p>
 <br/>
 <br/>
 <br/>
@@ -38,6 +38,45 @@
 <br/>
 my photos
 <br/>
+<img 
+   id="large-image-id" 
+   src="pictures/grandma5.jpg" 
+   style="width:500px; height: 500px;" 
+   alt="large image">
+<br/>
+<img 
+   onclick="document.getElementById('large-image-id').src=this.src" 
+   onmouseover="document.getElementById('large-image-id').src=this.src" 
+   src="pictures/grandma6.jpg" 
+   style="width:120px; height:80px;" 
+   title="Mars" 
+   alt="thumb image">
+
+<img 
+   onclick="document.getElementById('large-image-id').src=this.src" 
+   onmouseover="document.getElementById('large-image-id').src=this.src" 
+   src="pictures/grandma1.jpg" 
+   style="width:120px; height:80px;" 
+   title="Winter Castle" 
+   alt="thumb image">
+
+<img 
+   onclick="document.getElementById('large-image-id').src=this.src" 
+   onmouseover="document.getElementById('large-image-id').src=this.src" 
+   src="pictures/grandma7.jpeg" 
+   style="width:120px; height:80px;" 
+   title="Waterpaint" 
+   alt="thumb image">
+
+<img 
+   onclick="document.getElementById('large-image-id').src=this.src" 
+   onmouseover="document.getElementById('large-image-id').src=this.src" 
+   src="pictures/grandma5.jpg" 
+   style="width: 120px; height:80px;" 
+   title="Blue Midnight" 
+   alt="thumb image">
+
+
 <br/>
 <br/>
 </section>
@@ -63,6 +102,7 @@ my photos
 <br/>
 give me a like
 <br/>
+<div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-Naorsu/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
 <br/>
 <br/>
 </section>
@@ -75,6 +115,7 @@ give me a like
 <br/>
 scan my code
 <br/>
+<img src="pictures/Scan.png">
 <br/>
 <br/>
 </section>
@@ -118,4 +159,6 @@ $(function(){
  });​
  </script>
 </body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="0sRduwg9"></script>
 </html>
