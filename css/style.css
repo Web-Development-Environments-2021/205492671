@@ -10,8 +10,6 @@ body {background-color: #cfcfcf;}
 	background: #f1e7ea;
 	background-color: #7c142d;
 	margin-top: -0.6%;
-	
-	
 	overflow: hidden;
 }
 
@@ -24,10 +22,16 @@ body {background-color: #cfcfcf;}
 	font-size: 17px;
 	font-weight:bolder;
   }
+
 #menu a:hover {
 	background-color: #147c63;
 
   }
+
+#logo a:hover {
+	background-color: #7c142d;
+
+  } 
 
 #menu_list {
 	width: 100%;

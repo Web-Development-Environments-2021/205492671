@@ -10,7 +10,7 @@
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="XlLzBZjm"></script>
       <div id="menu">
       <ul id="menu_list">
-        <li id="logo"><img src="pictures/logo7.png" width=65 height=65></li>
+        <li id="logo"><a id="logoclick" href="#fb-root"><img src="pictures/logo7.png" width=65 height=65></a></li>
         <br>
         <li><a href="#about">About Me</a></li>
         <li><a href="#photos">My Photos</a></li>
@@ -69,14 +69,14 @@
     style="width:80px; height:80px;" 
     title="Me with my granddaughter Mor" 
     alt="thumb image">
-    <img 
+  <img 
     onclick="document.getElementById('large-image-id').src=this.src" 
     onmouseover="document.getElementById('large-image-id').src=this.src" 
     src="pictures/grandma12.jpeg" 
     style="width:80px; height:80px;" 
     title="Dolev's Henna" 
     alt="thumb image">
-    <img 
+  <img 
     onclick="document.getElementById('large-image-id').src=this.src" 
     onmouseover="document.getElementById('large-image-id').src=this.src" 
     src="pictures/grandma11.jpeg" 
