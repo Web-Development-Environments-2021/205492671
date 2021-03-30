@@ -9,7 +9,7 @@ body {background-color: #cfcfcf;}
 	height: 65px;
 	background: #f1e7ea;
 	background-color: #7c142d;
-	/* background-color: #a41e35;7c142d */
+	margin-top: -0.6%;
 	
 	
 	overflow: hidden;
@@ -31,7 +31,7 @@ body {background-color: #cfcfcf;}
 
 #menu_list {
 	width: 100%;
-    margin: auto;
+	margin: auto;
 }
 #menu_list li {
 	display: inline;
