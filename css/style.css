@@ -1,5 +1,4 @@
 body {background-color: #cfcfcf;}
-/* cfcfcf */
 #menu
 {
 	
@@ -79,7 +78,7 @@ p.aboutme, #contact_body{
 	border-width: 5px;
 	border-color: rgb(172, 49, 12);
 }
-/*  rgb(172, 49, 12); */
+
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
@@ -89,10 +88,7 @@ table, th, td {
 th {
 	background-color:#EA3C53;
 }
-  /* table.center {
-  margin-left: auto;
-  margin-right: auto;
-} */
+
 
 
 	
