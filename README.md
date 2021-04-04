@@ -5,6 +5,12 @@ assignment1-Naorsu created by GitHub Classroom
 
 שם מלא: נאור סובן
 
+שם משתמש:
+Naorsu
+
+קישור לאתר:
+https://web-development-environments-2021.github.io/205492671/
+
 הערות לבודק:
 1. השתמשתי בג'אווה סקריפט על מנת:
   1.1 כפתור הלוגו יאפשר חזרה לדף הבית
