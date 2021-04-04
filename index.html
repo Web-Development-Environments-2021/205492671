@@ -159,36 +159,48 @@
   <br/>
   <h2>Questions & Answers</h2>
   <br/>
-
-  <table style="width: 100%;">
-    <tr>
-      <th>Difference</th>
-      <th>Web 1.0</th>
-      <th>Web 2.0</th>
-      <th>Web 3.0</th>
-    </tr>
-    <tr>
-      <td>User Interaction</td>
-      <td>Read-Only, the pages were static and users can search for information and read the pages</td>
-      <td>Read-Write, users can read information and interact with the website by sharing and commenting</td>
-      <td>Read-Write-Execute, Personal and portable, applications are using AI technique (natural language) to suggest the most relvant information for each user.  </td>
-    </tr>
-    <tr>
-      <td>Primary Streaming Media</td>
-      <td>Home Pages</td>
-      <td>Wikipedia, Blogs</td>
-      <td>Live-Streaming</td>
-    </tr>
-    <tr>
-      <td>Advertising</td>
-      <td>Banner Advertising</td>
-      <td>Interactive Advertising</td>
-      <td>Behavioural Advertising</td>
-    </tr>
-    </table>
-    <br/>
-    <br/>
+  <span>Q: Mention three differences between Web1.0, Web2.0, Web3.0</span>
+  <br>
+  <button class="accordion">Show Answer</button>
+  <div class="extension">
     <table style="width: 100%;">
+      <br>
+      <tr>
+        <th>Difference</th>
+        <th>Web 1.0</th>
+        <th>Web 2.0</th>
+        <th>Web 3.0</th>
+      </tr>
+      <tr>
+        <td>User Interaction</td>
+        <td>Read-Only, the pages were static and users can search for information and read the pages</td>
+        <td>Read-Write, users can read information and interact with the website by sharing and commenting</td>
+        <td>Read-Write-Execute, Personal and portable, applications are using AI technique (natural language) to suggest the most relvant information for each user.  </td>
+      </tr>
+      <tr>
+        <td>Primary Streaming Media</td>
+        <td>Home Pages</td>
+        <td>Wikipedia, Blogs</td>
+        <td>Live-Streaming</td>
+      </tr>
+      <tr>
+        <td>Advertising</td>
+        <td>Banner Advertising</td>
+        <td>Interactive Advertising</td>
+        <td>Behavioural Advertising</td>
+      </tr>
+    </table>
+  </div>
+
+    <br/>
+    <br/>
+    <span>Q: Explain the differences by using use case</span>
+    <br>
+    <button class="accordion">Show Answer</button>
+    <br>
+    <div class="extension">
+    <table style="width: 100%;">
+      <br>
       <tr>
         <th colspan="4">The user will search "Eiffel Tower" in the website engine.</th>
       </tr>
@@ -219,6 +231,7 @@
       </table>
   </section>
 </div>
+</div>
   <br/>
   <br/>
   <br/>
@@ -233,9 +246,9 @@
       <span>Email Address: </span>
       <input type="text" id="email" placeholder="Enter your Email Address"><br><br>
     </label>
-    <link rel="stylesheet" href="emojionearea.min.css">
+    <link rel="stylesheet" href="css/emojionearea.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="emojionearea.min.js"></script>
+    <script src="js/emojionearea.min.js"></script>
     <label for="MailContent">
       Content:<br/>
       <textarea id="MailContent" name="body" rows="10" cols="10" maxlength="150" placeholder="Write to me..." required></textarea>
@@ -251,17 +264,36 @@
 
 
 <script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
+  /*This script is for menu navigation  */
+  $(function(){
+    $("#nav a").click(function(e){
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash,this.hash); 
+    });
   });
-});
+  </script>
+  <script type="text/javascript">
+  $(document).scroll(function() {
+      $('#menu').toggle($(this).scrollTop()>1000)
+  });​
 </script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+
+<script>
+  /*This script is for show the answer by clicking on the button  */
+  var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var extension = this.nextElementSibling;
+        if (extension.style.display === "block") {
+          extension.style.display = "none";
+        } else {
+          extension.style.display = "block";
+        }
+      });
+    }
+</script>
 </body>
 </html>

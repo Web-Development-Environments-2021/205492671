@@ -89,7 +89,29 @@ th {
 	background-color:#EA3C53;
 }
 
-
+.accordion {
+	background-color: #7c142d;
+	color: #f1e7ea;
+	cursor: pointer;
+	padding: 10px;
+	width: 20%;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: bold;
+	transition: 0.4s;
+  }
+  
+  
+  .active, .accordion:hover {
+	background-color: #147c63;
+  }
+  
+  .extension {
+	padding: 0 18px;
+	background-color: #f1e7ea;
+	display: none;
+	overflow: hidden;
+  }
 
 	
 	
